@@ -224,9 +224,7 @@ int WINAPI WinMain(
 		ScreenFlip();	//ダブルバッファリングした画面を描画
 	}
 
-	//読み込んだ画像を開放
-	for (int i = 0; i < TAMA_DIV_MAX; i++) { DeleteGraph(Tama[i]); }
-
+	
 	//ＤＸライブラリ使用の終了処理
 	DxLib_End();
 
